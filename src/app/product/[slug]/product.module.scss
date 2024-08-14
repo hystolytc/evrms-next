@@ -1,0 +1,173 @@
+@import '@/styles/variables.module.scss';
+
+.product {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+
+  h2 {
+    font-size: $text-base;
+    margin: 1rem 0;
+  }
+}
+
+.contentContainer {
+  display: flex;
+  gap: 3rem;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.imageBanner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.1);
+}
+
+.imageList {
+  width: 100%;
+  margin-top: 1rem;
+  overflow-x: auto;
+  display: flex;
+  gap: 0.5rem;
+
+  & > button {
+    border: 1px solid $clr-inactive;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.1);
+  }
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+
+  & h1 {
+    font-size: $text-lg;
+  }
+}
+
+.store {
+  padding: 2px 8px;
+  background-color: $clr-primary;
+  color: $clr-black;
+  width: fit-content;
+  border-radius: $rounded;
+  font-weight: 600;
+  font-size: $text-sm;
+}
+
+.price {
+  font-size: $text-lg;
+  font-weight: 700;
+
+  &--strike {
+    display: inline-block;
+    text-decoration: line-through;
+    color: $clr-inactive;
+    margin-right: 8px;
+    font-size: $text-lg;
+  }
+}
+
+.stock {
+  padding: 4px 8px;
+  background-color: $clr-black;
+  width: fit-content;
+  border-radius: $rounded;
+  color: $clr-primary;
+  font-size: $text-sm;
+  font-weight: 600;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: $text-sm;
+
+  & > svg {
+    color: $clr-black;
+  }
+}
+
+
+.order {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+
+  & > div:first-child {
+    display: flex;
+    border: 1px solid $clr-inactive;
+    padding: .5rem;
+    border-radius: $rounded;
+
+    &  button {
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    &  input {
+      display: block;
+      margin: 0 .5rem;
+      font-size: $text-base;
+      color: $clr-black;
+      outline: none;
+      width: 80px;
+      border: none;
+      text-align: center;
+    }
+  }
+
+  & > .priceTotal {
+    font-size: $text-base;
+    font-weight: 700;
+  } 
+}
+
+.btnAddToChart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: .5rem 1rem;
+  width: 300px;
+  border: none;
+  outline: none;
+  border-radius: $rounded;
+  background-color: $clr-primary;
+  color: $clr-black;
+  font-weight: 700;
+  font-size: $text-sm;
+  cursor: pointer;
+}
+
+.description {
+  margin-top: 3rem;
+  & > div {
+    color: $clr-black;
+    font-size: $text-sm;
+    line-height: 1.5rem;
+  }
+}

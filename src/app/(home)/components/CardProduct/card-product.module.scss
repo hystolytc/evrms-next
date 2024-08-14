@@ -1,0 +1,81 @@
+@import '@/styles/variables.module.scss';
+
+.card_product {
+  display: flex;
+  flex-direction: column;
+  background-color: $clr-white;
+  border-radius: $rounded;
+  height: 320px;
+  width: 230px;
+  font-size: $text-xs;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.1);
+  color: $clr-black;
+}
+
+.image {
+  width: 100%;
+  border-top-left-radius: $rounded;
+  border-top-right-radius: $rounded;
+  height: 180px;
+}
+
+.content_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4px 8px 8px;
+  gap: 4px;
+
+  & > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.name {
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 2;
+  height: 30px;
+}
+
+.price {
+  font-weight: 600;
+
+  &--strike {
+    display: inline-block;
+    text-decoration: line-through;
+    color: $clr-inactive;
+    margin-right: 8px;
+  }
+}
+
+.store {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  & > div {
+    height: 12px;
+    width: 12px;
+    background-color: $clr-primary;
+    border-radius: $rounded-full;
+  }
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  & > svg {
+    color: $clr-black;
+  }
+}

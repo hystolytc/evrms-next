@@ -1,0 +1,9 @@
+export const description = `Nama Penulis : Defrizal Siregar dan Yanita Sari\nPenerbit : Gema Insani\nUkuran:\t23cm x 15.2cm \nHalaman: 224 halaman\nCover:\tSoft Cover\n\nAssalamualaikum, Ayah dan Bunda.\nKetika anak sulit tenang dan fokus, sering sekali tindakannya tak tentu arah dan hasilnya pun kurang\nmemuaskan. Misalnya, ketika ia belajar di sekolah.\n\nSebagai orang tua, kita perlu beri bimbingan agar problem yang dialami anak dapat teratasi. Lalu,\nadakah cara praktis, sederhana, tapi mengasyikkan untuk anak? Tentu ada! Yuk, rutin melatih anak\nuntuk olahraga memanah.\n\nRasulullah saw. pun sangat menganjurkan para orang tua untuk mengajarkan anak memanah. Olahraga\nini membawa banyak manfaat, salah satunya dapat membuat anak lebih bersikap tenang dan fokus\nketika melakukan sesuatu.\n\nLalu, apa manfaat lain yang bisa didapat? Bagaimana cara membimbing anak untuk belajar memanah?\nAyah dan Bunda tidak perlu khawatir. Semuanya akan terjawab dalam buku MEMBIDIK\nKARAKTER HEBAT. New arrival karya Defrizal Siregar dan Yessy Yanita Sari`
+
+export const images = [
+  "https://assets.evermos.com/public/medium/q:100/evermos-production/brand/gema-insani/product/image/5ef4561c358bf.jpg",
+  "https://assets.evermos.com/public/medium/q:100/evermos-production/brand/gema-insani/product/image/5ef4561c44c78.jpg",
+  "https://assets.evermos.com/public/medium/q:100/evermos-production/brand/gema-insani/product/image/5ef4561c69766.jpg",
+  "https://assets.evermos.com/public/medium/q:100/evermos-production/brand/gema-insani/product/image/5ef4561c629fa.jpg",
+  "https://assets.evermos.com/public/medium/q:100/evermos-production/brand/gema-insani/product/image/5ef4561c55c74.jpg"
+]

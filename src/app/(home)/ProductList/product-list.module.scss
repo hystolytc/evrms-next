@@ -1,0 +1,8 @@
+// @import '@/styles/variables.module.scss';
+
+.catalog_container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+  gap: 1rem;
+}

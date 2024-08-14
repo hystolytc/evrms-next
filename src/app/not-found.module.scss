@@ -1,0 +1,40 @@
+@import '@/styles/variables.module.scss';
+
+.notFound {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.icon {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $rounded-full;
+  background-color: $clr-primary;
+  margin-bottom: 5rem;
+}
+
+.info {
+  text-align: center;
+
+  & > p {
+    font-size: $text-base;
+    color: $clr-black;
+    margin-bottom: 2rem;
+  }
+
+  & > a {
+    padding: .5rem;
+    border-radius: $rounded;
+    background-color: $clr-primary;
+    color: $clr-black;
+    font-weight: 700;
+  }
+}
