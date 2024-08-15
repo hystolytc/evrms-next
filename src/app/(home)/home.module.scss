@@ -1,8 +1,10 @@
-@import '@/styles/variables.module.scss';
+@import '@/styles/variables.scss';
 
 .home {
   padding-top: 50px;
   display: flex;
   justify-content: center;
+  min-height: 100vh;
   width: 100vw;
+  margin-bottom: 3rem;
 }

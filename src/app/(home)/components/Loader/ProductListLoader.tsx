@@ -4,7 +4,7 @@ import ContentLoader from "react-content-loader"
 const ProductListLoader = () => (
   <ContentLoader
     speed={2}
-    width={230}
+    width="100%"
     height={320}
     viewBox="0 0 230 320"
     backgroundColor="#f3f3f3"

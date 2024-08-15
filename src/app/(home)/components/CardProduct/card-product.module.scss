@@ -1,12 +1,11 @@
-@import '@/styles/variables.module.scss';
+@import '@/styles/variables.scss';
 
-.card_product {
+.cardProduct {
   display: flex;
   flex-direction: column;
   background-color: $clr-white;
   border-radius: $rounded;
   height: 320px;
-  width: 230px;
   font-size: $text-xs;
   cursor: pointer;
   box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.1);
@@ -20,7 +19,7 @@
   height: 180px;
 }
 
-.content_info {
+.contentInfo {
   flex: 1;
   display: flex;
   flex-direction: column;

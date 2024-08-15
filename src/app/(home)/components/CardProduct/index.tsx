@@ -17,7 +17,7 @@ interface Props {
 
 const CardProduct: React.FC<Props> = (props) => (
   <div 
-    className={styles.card_product}
+    className={styles.cardProduct}
     onClick={props.onClick}
   >
     <Image 
@@ -29,7 +29,7 @@ const CardProduct: React.FC<Props> = (props) => (
       priority
     />
     
-    <div className={styles.content_info}>
+    <div className={styles.contentInfo}>
       <div>
         <span className={styles.name}>
           {props.name}

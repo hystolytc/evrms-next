@@ -1,8 +1,31 @@
-// @import '@/styles/variables.module.scss';
+@import '@/styles/variables.scss';
 
-.catalog_container {
+.productList {
+  max-width: 1024px;
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(4, 230px);
   gap: 1rem;
+
+  & > div {
+    justify-self: center;
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  .productList {
+    grid-template-columns: repeat(3, 230px);
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .productList {
+    grid-template-columns: repeat(2, minmax(160px, 230px));
+  }
+}
+
+@media (max-width: 380px) {
+  .productList {
+    grid-template-columns: repeat(1, minmax(160px, 230px));
+  }
 }
