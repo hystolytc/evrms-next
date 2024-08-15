@@ -13,10 +13,7 @@ const ModalCart = () => {
   const cartRef = useRef(null)
 
   useEffect(() => {
-    if (!cart.isOpen) {
-      document.body.style.overflow = ''
-      return
-    }
+    if (!cart.isOpen) return
 
     const handleClickOutside = (e: any) => {
       if (cartRef.current && !(cartRef.current as any).contains(e.target)) {
@@ -24,11 +21,9 @@ const ModalCart = () => {
       }
     }
 
-    document.body.style.overflow = 'hidden'
     document.addEventListener('mousedown', handleClickOutside)
 
     return () => {
-      document.body.style.overflow = ''
       document.removeEventListener('mousedown', handleClickOutside)
     }
   }, [cart.isOpen])
