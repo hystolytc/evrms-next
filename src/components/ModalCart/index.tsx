@@ -14,7 +14,7 @@ const ModalCart = () => {
 
   useEffect(() => {
     if (!cart.isOpen) {
-      document.body.style.position = ''
+      document.body.style.overflow = ''
       return
     }
 
@@ -24,11 +24,11 @@ const ModalCart = () => {
       }
     }
 
-    document.body.style.position = 'fixed'
+    document.body.style.overflow = 'hidden'
     document.addEventListener('mousedown', handleClickOutside)
 
     return () => {
-      document.body.style.position = ''
+      document.body.style.overflow = ''
       document.removeEventListener('mousedown', handleClickOutside)
     }
   }, [cart.isOpen])
