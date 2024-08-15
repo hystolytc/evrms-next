@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## evrms.next
+This is a web app created to fulfill the technical test for Evermos using React and Next.js.
 
-## Getting Started
+## Tech Stack
+- React
+- NextJs 14
+- Zustand for state management
+- Fetch API for http client
+- SCSS for CSS pre processor
 
-First, run the development server:
+## Mock API Server
+The API is created using My JSON Server. There is a limitation related to the total size in KB for creating the API using My JSON Server. Due to this, the API contains only one detailed product and two endpoints to show the list of products.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- https://my-json-server.typicode.com/hystolytc/evrms-mock-data/products
+This URL is used to show the list of products.
+- https://my-json-server.typicode.com/hystolytc/evrms-mock-data/productsbmV4dHBhZ2U9Mg==
+This URL is used to simulate pagination to show the rest of the product list.
+- https://my-json-server.typicode.com/hystolytc/evrms-mock-data/slug-example-detail-product
+This URL is used to get the product details based on the slug.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Product listing
+- Pagination to display the product list
+- Product details
+- Add to cart
+- All pages are responsive
+- The Product List page is rendered as CSR
+- The Product Details page is rendered as SSR
